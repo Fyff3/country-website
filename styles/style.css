@@ -209,7 +209,8 @@ a.site-name {
 img.page-end {
     width: 20%;
     height: auto;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 

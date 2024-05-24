@@ -216,9 +216,11 @@ img.page-end {
 }
 
 table {
-    margin: 1rem;
+    margin: 0 auto;
     padding: 1rem;
-    border: #282828 solid 1px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
 }
 
 th {
@@ -236,9 +238,14 @@ tr {
 
 td, tr {
     border: #282828 solid 1px;
-    padding-left: .25rem;
+    padding: .5rem;
 }
 
+cite {
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+}
 
 /* CREDITS */
 

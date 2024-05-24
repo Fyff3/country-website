@@ -25,11 +25,11 @@
 html {
     scroll-behavior: smooth;    
 }
-/* 
-@media (prefers-reduced-motion) {
+
+/* @media (prefers-reduced-motion) {
     html {
         scroll-behavior: auto;
-    }  ACCESSIBILTY
+    } 
  } */
 
 
@@ -43,7 +43,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family:'amaranth';
-    margin: .5em 0;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 h1 {
@@ -55,7 +56,8 @@ h2 {
 }
 
 p {
-    margin: 0 0 1.5em;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 /* Elements
@@ -213,8 +215,29 @@ img.page-end {
     padding: 2rem;
 }
 
+table {
+    margin: 1rem;
+    padding: 1rem;
+    border: #282828 solid 1px;
+}
 
+th {
+    padding: 1rem;
+    border: #282828 solid 1px;
+}
 
+tr :first-child {
+    font-weight: bold;
+}
+
+tr {
+    text-align: left;
+}
+
+td, tr {
+    border: #282828 solid 1px;
+    padding-left: .25rem;
+}
 
 
 /* CREDITS */

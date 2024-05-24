@@ -207,7 +207,7 @@ a.site-name {
 }
 
 img.page-end {
-    width: 20%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
     padding: 2rem;
@@ -218,6 +218,7 @@ img.page-end {
 
 
 /* CREDITS */
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */

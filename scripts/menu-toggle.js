@@ -4,8 +4,10 @@ const links = document.getElementById('nav-menu');
 
 button.addEventListener('click', function(){
     links.classList.toggle('toggled');
-
+    const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+    button.setAttribute('aria-expanded', !expanded);
 });
+
 
 // Thumb Navigation Toggle
 

@@ -20,17 +20,18 @@
 # Base
 --------------------------------------------------------------*/
 
-/* Typography
+/*
 --------------------------------------------- */
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;    
 }
 
-/* @media (prefers-reduced-motion) {
-    html {
-        scroll-behavior: auto;
-    } 
- } */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 
 body {
@@ -39,6 +40,9 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #282828;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,19 +64,17 @@ p {
     padding: 1rem;
 }
 
-/* Elements
---------------------------------------------- */
-
 
 /* Links
 --------------------------------------------- */
 .resources a {
     text-decoration: none;
 }
+
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-
 
 /* Header
 --------------------------------------------- */
@@ -84,65 +86,60 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    position: relative;
 }
 
-/* Navigation Menu */
-.site-navigation {
-    display: flex;
-    align-items: center;
-}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #000000; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 3.75rem; /* Place ontent 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    margin-right: 1rem;
-}
-
-.nav-menu a {
+.sidenav a {
+    display: block;
+    padding: .5rem;
     text-decoration: none;
-    color: #ffffff;
+    list-style-type: none;
+    color: #f2f2f2;
     font-size: 1.25rem;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #ff0000;
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-toggle svg {
+svg {
     fill: #ffffff;
 }
-
+.sidenav .closebtn {
+    position: absolute;
+    color: #ffffff;
+    top: 0;
+    left: 1.5625rem;
+    font-size: 2.25rem;
+    margin-right: 3.125rem;
+  }
+  
 .site-name {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
 }
+
 /* Media Queries for smaller screens */
-@media (max-width: 50em) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-menu.toggled {
-        display: flex;
-    }
-}
-
+@media screen and (max-width: 25rem) {
+    .sidenav {padding-top: 3rem;}
+    .sidenav a {font-size: 1.125rem;}
+  }
 
 /* Main
 --------------------------------------------- */
@@ -195,8 +192,8 @@ td, tr {
 }
 
 cite {
-    margin: 1rem;
-    padding: 2rem;
+    margin: 2rem 2rem;
+    padding: 1rem;
     text-align: left;
 }
 
@@ -241,7 +238,6 @@ input[type=text], select, textarea {
 /* FOOTER */
 
   footer {
-    height: 100vh;
     background-color: #000000;
     color: #ffffff;
     display: block;

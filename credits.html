@@ -24,30 +24,23 @@
 
     <div class="site-wrapper">
 
+      
         <header class="site-header">
 
-                <a href="index.html" class="site-name">DTES</a>
+            <span onclick="openNav()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></span>
 
-                <nav class="site-navigation" id="site-navigation">
-
-                    <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                            <title>Menu Icon</title>
-                            <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z">
-                            </path>
-                        </svg>
-                    </button>
-    
-
+                <nav class="site-navigation">
+                    <nav id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <ul class="nav-menu" id="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="history.html">History</a></li>
                         <li><a href="culture.html">Culture</a></li>
                         <li><a href="credits.html">Credits</a></li>
                     </ul>
-
                 </nav>
-           
+                
+               <a href="index.html" class="site-name">DTES</a> 
         </header>
         <main class="site-main">
 

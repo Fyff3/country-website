@@ -59,6 +59,10 @@ h2 {
     font-size: 1.75rem;
 }
 
+h3{
+    text-align: center;
+}
+
 p {
     margin: 1rem;
     padding: 1rem;
@@ -67,10 +71,6 @@ p {
 
 /* Links
 --------------------------------------------- */
-.resources a {
-    text-decoration: none;
-}
-
 
 /*--------------------------------------------------------------
 # Components
@@ -146,30 +146,34 @@ svg {
 
 .site-main {
     flex: 1;
-    max-width: 57rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
 }
 
-.banner {
+
+ul, li {
+    list-style-type: none;
+    text-decoration: none;
+}
+#banner {
     position: relative;
 }
 
 /* do i need to resize image? */
-.banner img {
-    display: block;
+#banner img {
+    position: absolute;
     width: 100%;
-    /* height: 100vh; */
-    object-fit: cover;
-    object-position: top center;
+    height: auto;
 }
 
 
 img.page-end {
     max-width: 20%;
     height: auto;
-    justify-content: center;
-   
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 table {
@@ -199,9 +203,8 @@ td, tr {
 }
 
 cite {
-    margin: 2rem 2rem;
-    padding: 1rem;
-    text-align: left;
+    margin: 1rem;
+    text-align: center;
 }
 
 section {
@@ -213,6 +216,20 @@ section {
    
 }
 
+li {
+   list-style-type: none;
+   text-decoration: none;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+image {
+    width: 60%;
+    height: auto;
+}
 /* CREDITS */
 
 /* Style inputs with type="text", select elements and textareas */

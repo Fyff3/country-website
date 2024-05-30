@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="contact form and credits page">
     <title>Country Website</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -24,37 +25,40 @@
 
     <div class="site-wrapper">
 
+      
         <header class="site-header">
 
-                <a href="index.html" class="site-name">DTES</a>
+            <span onclick="openNav()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></span>
 
-                <nav class="site-navigation" id="site-navigation">
-
-                    <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                            <title>Menu Icon</title>
-                            <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z">
-                            </path>
-                        </svg>
-                    </button>
-    
-
+                <nav class="site-navigation">
+                    <nav id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <ul class="nav-menu" id="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="history.html">History</a></li>
                         <li><a href="culture.html">Culture</a></li>
                         <li><a href="credits.html">Credits</a></li>
                     </ul>
-
                 </nav>
-           
+                
+               <a href="index.html" class="site-name">DTES</a> 
         </header>
         <main class="site-main">
 
-            <section class="banner-image">
-
+            <div id="banner-image">
                <img src="./images/rohit-tandon-bv-vGNhWLKc-unsplash.jpg" alt="IImage of Vancovuer skyline">
-               
+            </div>
+
+            <section>
+                <h3>Special thanks to our hosts and the following resources!</h3>
+                <p>Vancouver Aboriginal Friendship Centre Society</p>
+                <p>Vancouver Native Health</p>
+                <p>BC Indigenous Housing Society</p>
+                <p>BC Coroners Service</p>
+                <p>Pexels</p>
+                <p>Unsplash</p>
+                <p>W3 Schools</p>
+                <p>MDN Web Docs (Mozilla Developer Network) </p>
             </section>
 
             <div class="container">
@@ -98,18 +102,18 @@
             <li><a href="history.html">History</a></li>
             <li><a href="culture.html">Culture</a></li>
             <li><a href="credits.html">Credits</a></li>
-        </ul><br>
-        <div>
-            <ul>
+        
+            <div class="socials">
                 <li><a href="#" class="fa fa-twitter"></a></li>
                 <li><a href="#" class="fa fa-linkedin"></a></li>
                 <li><a href="#" class="fa fa-instagram"></a></li>
-            </ul>
-        </div>
-            <p> I am grateful to live and study on the unceded territories of the xʷməθkʷəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and səlil̓ilw̓ətaʔɬ (Tsleil-Waututh) Peoples.</p>
+            </div>
+        </ul>
+
+        <p> I am so grateful to live and study on the unceded territories of the xʷməθkʷəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and səlil̓ilw̓ətaʔɬ (Tsleil-Waututh) Peoples.</p>
 
         <p>&copy; Kate Shepherd FWD 2024.</p>
-        
+
     </footer>
 </body>
 
